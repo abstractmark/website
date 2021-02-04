@@ -1,2 +1,2 @@
 # AbstractMark documentation site
-will be available soon after the alpha version released.
+will be available soon after the alpha race 1 version released.

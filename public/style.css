@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Chilanka");
+.playground{
+    margin: 20px;
+}
+
+.playground-input{
+    width: calc(50% - 50px);
+    height: calc(100vh - 100px);
+    font-size: 15px;
+    padding: 10px;
+    float: left;
+    margin: 0 10px;
+    font-family: "Chilanka";
+}
+
+.playground-preview{
+    width: calc(50% - 50px);
+    float: left;
+    overflow: auto;
+    border: 1px solid #ccc;
+    height: calc(100vh - 100px);
+    padding: 10px;
+    margin: 0 10px;
+}
+.playground-title{
+    font-family: "Chilanka";
+    margin: 0 0 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-size: 2em  !important;
+    font-weight: bolder !important;
+    padding: 0 !important;
+    line-height: normal !important;
+}
+.playground-options{
+    position: fixed;
+    bottom: 20%;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 5px 0;
+}
+.playground-checkbox-options{
+    border-bottom: 1px solid #ccc;
+}
+.playground-option-button{
+    display: block;
+    margin: 5px auto;
+    padding: 4px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    text-decoration:none;
+    cursor: pointer;
+    background-color: #ececec;
+}
+
+.playground-export-modal{
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.playground-export-modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+    padding: 10px;
+}
+
+.playground-export-close-modal{
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type=radio] {
+    width: 16px;
+    height: 16px;
+    transition: all .4s; 
+}
+  
+input[type=radio]:checked {
+    -webkit-animation: radio-animate .25s ease-out;
+    animation: radio-animate .25s ease-out; 
+}
+
+input[type=radio]:hover {
+    cursor: pointer;
+    transform: scale(1.2); 
+}
+.form-group {
+    margin: 16px 14px; 
+}
+
+.export-btn{
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: #212121;
+    color: #999;
+}
+.export-btn:hover{
+    background-color: #ffffff;
+    color: #212121;
+}
+@media only screen and (max-width: 600px){
+    .playground-input{
+        width: -webkit-fill-available;
+        height: calc(50vh - 40px);
+    }
+    .playground-preview{
+        width: -webkit-fill-available;
+        height: calc(50vh - 40px);
+    }
+}
