@@ -70,7 +70,7 @@ const Playground = () => {
     return(
         <div className="playground">
             <h1 className="playground-title">AbstractMark Playground</h1>
-            <textarea value={AMSource} onChange = {({target: {value}}) => setAMSource(value)} className="playground-input"></textarea>
+            <textarea value={AMSource} onChange = {({target: {value}}) => setAMSource(value)} className="playground-input" spellCheck="false"></textarea>
             <div dangerouslySetInnerHTML={{ __html: AbstractMark(AMSource, {styled: styled, fullHTMLTags: true}) }} className="playground-preview"></div>
             <div className="playground-options">
                 <div className="playground-checkbox-options">
