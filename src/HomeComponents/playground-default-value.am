@@ -1,0 +1,82 @@
+# h1 Heading 
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+
+###### custom heading id{#heading-id}
+
+## Horizontal Rule
+---
+
+## Typography
+**Bold text**
+_Italic text**
+%underline text%
+~~Striketrough text~~
+
+## Code
+- inline code
+	`inline code`
+- Multiline code
+	```
+	<script>
+	alert("Hello World")
+	</script>
+	```
+
+## Class usage
+#### Defining class
+---define
+.myclass{
+	/*css style here*/
+	background-color: red;
+}
+---
+```
+---define
+.myclass{
+	/*css style here*/
+	background-color: red;
+}
+---
+```
+
+#### Using class
+this is a line with red background{!myclass}
+
+## Inline Styling
+hello world {color: red}
+###### hello {#hi} {color:blue}
+###### hello {#hi} {color:blue} {!myclass}
+
+## Link
+[AbstrractMark](https://github.com/abstractmark/abstractmark)
+
+## Image
+![AbstractMark logo](https://avatars.githubusercontent.com/u/77182073?s=200&v=4)
+
+## Blockquotes
+> Blockquotes 
+>> Nested Blockquotes
+>>> Lorem ipsum
+
+## List
+#### Unordered list
+
+- Create an unordered list by starting a line with `-`
+- Sub-lists made by indenting n spaces or tab. **Note** that the n should be constant
+- Try it now!
+
+#### Ordered list
+1. Create an ordered list by starting a line with a number and a `.`(dot)
+2. You can use sequential numbers or any number
+1000. See this !!!
+1. And this !!!
+
+## Table
+| heading 1 | heading 2 |
+| ----------- | ------------ |
+| hello | world |
+| lorem | ipsum |

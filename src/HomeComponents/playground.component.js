@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {AbstractMark} from "@abstractmark/abstractmark";
+import defaultValue from "./playground-default-value.am";
+import Axios from "axios";
 
 const Playground = () => {
     const [AMSource, setAMSource] = useState('');
@@ -10,6 +12,10 @@ const Playground = () => {
     useEffect(() => {
         document.title = "AbstractMark playground"
         document.body.style.margin = "0 !important";
+    }, [])
+
+    useEffect(() => {
+        Axios.get(defaultValue).then(result => setAMSource(result.data))
     }, [])
 
     useEffect(() => {
@@ -64,7 +70,7 @@ const Playground = () => {
             }
         }
         if(exportFormat === "AM") saveFile(AMSource, 'download.am')
-        else if(exportFormat === "HTML") saveFile(AbstractMark(AMSource, {styled: styled, fullHTMLTags: true}), 'example.html')
+        else if(exportFormat === "HTML") saveFile(AbstractMark(AMSource, {styled: styled, fullHTMLTags: true}), 'index.html')
     }
 
     return(
