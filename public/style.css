@@ -125,4 +125,7 @@ input[type=radio]:hover {
         width: -webkit-fill-available;
         height: calc(50vh - 40px);
     }
+    body{
+        margin: 0 15px !important;
+    }
 }

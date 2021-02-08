@@ -1,3 +1,4 @@
+# AbstractMark Cheatsheet {text-align:center;}
 - Blockquote
     ```
     > blockquote
@@ -98,12 +99,10 @@
     ~~Strikethrough text~~
     ```
 - Style
-
     Syntax:
     ```
     element {styles}
     ```
-
     Example:
     ```
     ## Hello World {color: blue;}
