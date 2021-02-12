@@ -14,6 +14,8 @@ const ReadDocs = params => {
         docs.forEach(doc => {
             if(doc.url === params.match.params.doc){
                 axios.get(doc.code).then(res => setDocRes(AbstractMark(res.data, {styled: true})))
+                document.title = doc.title
+                document.querySelector('meta[name="description"]').setAttribute("content", doc.description);
             }
         })
     }, [params.match.params.doc])
