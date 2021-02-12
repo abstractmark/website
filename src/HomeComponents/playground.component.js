@@ -10,7 +10,8 @@ const Playground = () => {
 
     // Update document title and remove the body margin
     useEffect(() => {
-        document.title = "AbstractMark playground"
+        document.title = "AbstractMark playground";
+        document.querySelector('meta[name="description"]').setAttribute("content", "[Abstractmark playground] Test and play AbstractMark here");
         document.body.style.margin = "0 !important";
     }, [])
 
