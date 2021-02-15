@@ -17,7 +17,7 @@ _Italic text_
 ~~Striketrough text~~
 
 ## Code
-- inline code
+- Inline code
 	`inline code`
 - Multiline code
 	```
@@ -44,12 +44,22 @@ _Italic text_
 ```
 
 #### Using class
-this is a line with red background{!myclass}
+this is a line with red background{.myclass}
 
 ## Inline Styling
 hello world {color: red}
 ###### hello {#hi} {color:blue}
-###### hello {#hi} {color:blue} {!myclass}
+###### hello {#hi} {color:blue} {.myclass}
+
+## External css
+```
+stylesheet = https://cdn.jsdelivr.net/npm/@fire-ui/fire-ui@0.2.3/FireUI.min.css
+```
+
+## External JavaScript
+```
+script = https://cdn.jsdelivr.net/npm/@fire-ui/fire-ui@0.2.3/FireUI.min.js
+```
 
 ## Link
 [AbstractMark](https://github.com/abstractmark/abstractmark)

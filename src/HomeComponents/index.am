@@ -7,7 +7,7 @@
         color: white; padding: 10px; width: -webkit-fill-available; }
 .img { width: 20%; height: 20%; }
 ---
-# Mastering AbstractMark Markup Language{!background}
+# Mastering AbstractMark Markup Language{.background}
 
 ## Introduction
 AbstractMark is the next level generation of markdown language, allowing user to add custom styling, classes and more into their markdown.
