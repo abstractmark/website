@@ -126,6 +126,6 @@ input[type=radio]:hover {
         height: calc(50vh - 40px);
     }
     body{
-        margin: 0 15px !important;
+        margin: 0 15px;
     }
 }

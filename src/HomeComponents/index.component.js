@@ -6,7 +6,7 @@ import {AbstractMark} from "@abstractmark/abstractmark";
 const HomePage = () => {
     const [homePage, setHomePage] = useState('');
     useEffect(() => {
-        Axios.get(raw).then(res => setHomePage(AbstractMark(res.data, {styled: true})))
+        Axios.get(raw).then(res => setHomePage(AbstractMark(res.data, {styled: false})))
     }, [])
     return(
         <div dangerouslySetInnerHTML={{ __html: homePage }}></div>
