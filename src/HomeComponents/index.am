@@ -115,7 +115,7 @@ body{
         <div class="col-6">
             <div class="p-2">
                 ## Performance {.blue-gradient-text}
-                AbstractMark is lightweight markup language, AbstractMark's javascript implementation code with its dependencies memory is less than 0.2 MB! This website, which is written using React and AbstractMark itself, compiled in <span id="speed"></span>.
+                AbstractMark is a lightweight markup language, AbstractMark's javascript implementation code with its dependencies memory is less than 3 MB! This website, which is written using React and AbstractMark itself, compiled in <span id="speed"></span>.
             </div>
         </div>
         <div class="col-6">

@@ -1,3 +1,27 @@
-# Get started
+# AbstractMark Documentation
 
-Will be available soon...
+## Introduction
+
+AbstractMark is a simple, modern, readable and lightweight markup language that you can use to design a modern website. AbstractMark designed to inherit the traditional syntax and add supports for styling website using a constant syntax (which means in most cases, there'd be only one syntax). AbstractMark's goal is to let user create a modern website as simple as possible.
+
+> AbstractMark is different from [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) editor. AbstractMark is inherited from traditional Markdown language to use AbstractMark-formatted file which are `.am` and `.abstractmark` extended file.
+
+<p>You can write AbstractMark file in any text editor and save it as `.am` or `.abstractmark` extension or even try it on [this playground](/playground).</p>
+
+## Installation
+### npm 
+`npm i @abstractmark/abstractmark -g`
+### yarn
+`yarm add @abstractmark/abstractmark -g`
+### Installation from source
+You will need either `git` and `npm` or `yarn` for Installation from source
+```
+git clone https://github.com/abstractmark/javascript.git abstractmark
+cd abstractmark
+npm i -g
+```
+
+## Table of Contents
+- [Syntax guide](/syntax)
+- [CLI](/cli)
+- [JavaScript implementation](javascript-implementation)

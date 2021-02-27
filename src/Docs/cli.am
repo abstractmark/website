@@ -1,0 +1,51 @@
+# AbstractMark Command Line Interface
+You can convert abstractmark file into html file using CLI!
+
+## Installation
+
+### Requirement
+- `npm` or `yarn` with it's path registered on your system path
+
+### npm
+```
+npm i @abstractmark/abstractmark -g
+```
+### yarn
+```
+yarn add @abstractmark/abstractmark -g
+```
+
+To make sure AbstractMark CLI installed properly, type `abstractmark --help`, it should shows abstractmark CLI usage, if it doesn't, please open an issue [here](https://github.com/abstractmark/javascript/issues).
+
+## Usage:
+- For Converting AbstractMark to HTML file:
+    run `abstractmark [abstractmark file] [Output file] [abstractmark options]`, options available:
+    1. `-open` .......... Open Converted HTML file in your default browser after finish converting.
+    2. `-t`, `--tags` ... Convert to only HTML file which contains only corresonding tags. (Note that AbstractMark CLI converts to full HTML file as default)
+    3. `-unstyled` ...... Convert to only HTML file without default style on it.
+- For AbstractMark information:
+    run `abstractmark [option]`, options available:
+    1. `--help` .......... Informations about AbstractMark CLI
+    2. `-v` ................... Shows AbstractMark current version
+
+## Example
+1. Converting `helloworld.am` into `helloworld.html`
+    ```
+    $ abstractmark helloworld.am
+    ```
+2. Converting `helloworld.am` into `hi.html`
+    ```
+    $ abstractmark helloworld.am hi.html
+    ```
+3. Converting `helloworld.am` into `test.html` and open it on browser
+    ```
+    $ abstractmark helloworld.am test.html -open
+    ```
+4. Converting `helloworld.am` into `test.html` without default style and open it on browser
+    ```
+    $ abstractmark helloworld.am test.html -open -unstyled
+    ```
+5. Converting `helloworld.am` into `test.html` with only its corresonding tag and without default style and open it on browser
+    ```
+    $ abstractmark helloworld.am test.html -open -t -unstyled
+    ```
