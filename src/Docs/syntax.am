@@ -1,2 +1,388 @@
-# AbstractMark Syntax 
-will be available soon
+# AbstractMark Syntax {text-align:center}
+
+## Table of Contents
+<div class="row">
+    <div class="col-4">
+        - [Blockquote](#blockquote)
+            - [Syntax](#blockquote-syntax)
+            - [Nested Blockquote](#nested-blockquote)
+        - [Code](#code)
+            - [Inline Code](#inline-code)
+                - [Syntax](#inline-code-syntax)
+            - [Fenced Code Block](#fenced-code-block)
+                - [Syntax](#fenced-code-block-syntax)
+        - [CSS Class](#class)
+            - [Defining CSS Class](#define-class)
+                - [Syntax](#define-class-syntax)
+                - [Example](#define-class-example)
+            - [Using CSS Class](#class-usage)
+                - [Syntax](#class-usage-syntax)
+                - [Example](#class-usage-example)
+        - [External Scripts](#external-scripts)
+            - [External CSS](#external-css)
+                - [Syntax](#external-css-syntax)
+                - [Example](#external-css-example)
+            - [External JavaScript](#external-javascript)
+                - [Syntax](#external-js-syntax)
+                - [Example](#external-js-example)
+        
+    </div>
+    <div class="col-4">
+        - [Heading](#heading)
+            - [Syntax](#heading-syntax)
+            - [Heading ID](#heading-id)
+        - [Horizontal Rule](#horizontal-rule)
+            - [Syntax](#horizontal-rule-syntax)
+        - [Image](#image)
+            - [Syntax](#image-syntax)
+            - [Example](#image-example)
+        - [Link](#link)
+            - [Syntax](#link-syntax)
+            - [Example](#link-example)
+        - [List](#list)
+            - [Ordered List](#ordered-list)
+                - [Syntax](#ordered-list-syntax)
+                - [Example](#ordered-list-example)
+            - [Unordered List](#unordered-list)
+                - [Syntax](#unordered-list-syntax)
+                - [Example](#unordered-list-example)
+            - [Nested List](#nested-list)
+                - [Example](#nested-list-example)
+    </div>
+    <div class="col-4">
+        - [Style](#style)
+            - [Syntax](#style-syntax)
+            - [Example](#style-example)
+        - [Table](#table)
+            - [Syntax](#table-syntax)
+            - [Example](#table-example)
+        - [Task List](#task-list)
+            - [Syntax](#task-list-syntax)
+            - [Example](#task-list-example)
+        - [Typography](#typography)
+            - [Bold](#bold)
+                - [Syntax](#bold-text-syntax)
+            - [Italic](#italic)
+                - [Syntax](#italic-text-syntax)
+            - [Strikethrough](#strikethrough)
+                - [Syntax](#strikethrough-text-syntax)
+            - [Underline](#underline)
+                - [Syntax](#underline-text-syntax)
+            - [Typography Combination](#combination)
+    </div>
+</div>
+## Blockquote
+> Blockquote
+
+#### Syntax: {#blockquote-syntax}
+```
+> Blockquote
+```
+#### Nested Blockquote
+```
+> Blockquote
+>> Nested Blockquote
+> Blockquote
+```
+##### Result:
+> Blockquote
+>> Nested Blockquote
+> Blockquote
+
+## Code
+
+### Inline Code
+This is an `inline code`.
+#### Syntax: {#inline-code-syntax}
+```
+This is an `inline code`.
+```
+
+### Fenced Code Block
+```
+<script>
+alert("Hello World")
+</script>
+```
+
+#### Syntax: {#fenced-code-block-syntax}
+```
+\```
+<script>
+alert("Hello World")
+</script>
+\```
+```
+
+## Class
+### Defining class and tags styles {#define-class}
+Defining CSS Class and tags styles using CSS Standart
+
+#### Syntax: {#define-class-syntax}
+```
+---define
+className{
+    // styles here
+}
+---
+```
+
+#### Example: {#define-class-example}
+```
+---define
+.blue-text{
+    color: blue;
+}
+.red-text{
+    color: red;
+}
+---
+```
+
+### Class Usage
+#### Syntax {#class-usage-syntax}
+```
+Elements {.className}
+```
+#### Example {#class-usage-example}
+```
+# Hello World {.blue-text}
+```
+
+**NB:**  To use multiple classes on an element, split it by space, example:
+```
+# Hello World {.blue-text red-background}
+```
+
+## External Scripts
+### External CSS
+#### Syntax {#external-css-syntax}
+```
+stylesheet = (CSS URL)
+```
+#### Example {#external-css-example}
+```
+stylesheet = https://cdn.jsdelivr.net/npm/@fire-ui/fire-ui@0.2.4/FireUI.min.css
+```
+
+### External JavaScript
+#### Syntax {#external-js-syntax}
+```
+script = (JS URL)
+```
+#### Example {#external-js-example}
+```
+script = https://cdn.jsdelivr.net/npm/@fire-ui/fire-ui@0.2.4/FireUI.min.js
+```
+
+## Heading
+AbstractMark supports 6 level of heading, such as:
+# First Level Heading
+## Second Level Heading
+### Third Level Heading
+#### Fourth Level Heading
+##### Fifth Level Heading
+###### Sixth Level Heading
+
+### Syntax {#heading-syntax}
+```
+# First Level Heading
+## Second Level Heading
+### Third Level Heading
+#### Fourth Level Heading
+##### Fifth Level Heading
+###### Sixth Level Heading
+```
+
+### Heading ID
+As default, AbstractMark will use the first 50 characters of your heading text with the text lowerized, without non-ASCII character and replace space into "-". For example `# Hello World` heading id will be `hello-world`, to customize it, add following syntax into your heading:
+```
+# Heading {#heading-id}
+```
+
+## Horizontal Rule
+This is horizontal rule:
+---
+### Syntax{#horizontal-rule-syntax}
+```
+---
+```
+
+## Image
+
+### Syntax{#image-syntax}
+```
+![Alt text](image link)
+```
+
+### Example {#image-example}
+![AbstractMark Logo](https://avatars.githubusercontent.com/u/77182073?s=200&v=4)
+```
+![AbstractMark Logo](https://avatars.githubusercontent.com/u/77182073?s=200&v=4)
+```
+
+## Link
+### Syntax {#link-syntax}
+```
+[Text](URL)
+```
+### Example {#link-example}
+[AbstractMark Documentation Site](https://abstractmark.netlify.app/)
+```
+[AbstractMark Documentation Site](https://abstractmark.netlify.app/)
+```
+
+## List
+### Ordered List
+#### Syntax {#ordered-list-syntax}
+You can ordered a list by starting a line with a number and a `.`(dot). You can use sequential numbers or just any number.
+```
+1. Ordered List
+2. Ordered List
+3. You can use sequential number like this,
+1. or unsequental number like this
+```
+#### Example {#ordered-list-example}
+1. Ordered List
+2. Ordered List
+3. You can use sequential number like this,
+1. or unsequental number like this
+```
+1. Ordered List
+2. Ordered List
+3. You can use sequential number like this,
+1. or unsequental number like this
+```
+
+### Unordered List
+#### Syntax {#unordered-list-syntax}
+You can create an unordered list by starting a line with '-' followed by a space.
+```
+- Unordered List
+- Unordered List
+- Unordered List
+```
+
+#### Example {#unordered-list-example}
+- Unordered List
+- Unordered List
+- Unordered List
+```
+- Unordered List
+- Unordered List
+- Unordered List
+```
+### Nested List
+Nested List is made by indenting "n" spaces or tabs. **Note** that n should be a constant number.
+
+#### Nested List Example
+- Unordered List
+- Unordered List
+    1. Nested Ordered List
+    2. Nested Ordered List
+        - Nested Unordered List
+        - Nested Unordered List
+            1. Nested Ordered List
+            2. Nested Ordered List
+        - Nested Unordered List
+    3. Nested Ordered List
+- Unordered List
+```
+- Unordered List
+- Unordered List
+    1. Nested Ordered List
+    2. Nested Ordered List
+        - Nested Unordered List
+        - Nested Unordered List
+            1. Nested Ordered List
+            2. Nested Ordered List
+        - Nested Unordered List
+    3. Nested Ordered List
+- Unordered List
+```
+## Style
+AbstractMark supports CSS based inline style too!
+### Syntax {#style-syntax}
+```
+Elements {CSS styles here}
+```
+### Example {#style-example}
+#### Hello World {color: red}
+```
+#### Hello World {color: red}
+```
+## Table
+### Syntax {#table-syntax}
+Table row data is splitted by `|` and a space.
+```
+| Heading | Heading |
+| ----- | ----- |
+| Table data | Table data |
+| Table data | Table data |
+```
+### Example {#table-example}
+| Heading | Heading | Heading |
+| ----- | ----- | ----- |
+| Table data | Table data | Table data |
+| Table data | Table data | Table data |
+
+```
+| Heading | Heading | Heading |
+| ----- | ----- | ----- |
+| Table data | Table data | Table data |
+| Table data | Table data | Table data |
+```
+
+## Task List
+### Syntax
+```
+- [ ] Task List
+- [x] Checked Task List
+```
+### Example
+- [ ] Task List
+- [x] Checked Task List
+- [ ] Task List
+- [x] Checked Task List
+
+```
+- [ ] Task List
+- [x] Checked Task List
+- [ ] Task List
+- [x] Checked Task List
+```
+
+## Typography
+### Bold
+**Bold text**
+#### Syntax {#bold-text-syntax}
+```
+**Bold text**
+```
+
+### Italic
+_Italic text_
+#### Syntax {#italic-text-syntax}
+```
+_Italic text_
+```
+
+### Strikethrough
+~~Strikethrough~~
+#### Syntax {#strikethrough-text-syntax}
+```
+~~Strikethrough~~
+```
+
+### Underline
+%Underline text%
+#### Syntax {#underline-text-syntax}
+```
+%Underline text%
+```
+
+### Combination
+**~~_%`Combined Typography`%_~~**
+```
+**~~_%`Combined Typography`%_~~**
+```

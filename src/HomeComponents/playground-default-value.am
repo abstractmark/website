@@ -90,3 +90,7 @@ script = https://cdn.jsdelivr.net/npm/@fire-ui/fire-ui@0.2.3/FireUI.min.js
 | ----------- | ------------ |
 | hello | world |
 | lorem | ipsum |
+
+## Task List
+- [ ] Task List
+- [X] Checked Task List
