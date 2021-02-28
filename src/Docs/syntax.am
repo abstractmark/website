@@ -36,6 +36,9 @@
         - [Image](#image)
             - [Syntax](#image-syntax)
             - [Example](#image-example)
+        - [Marquee](#marquee)
+            - [Syntax](#marquee-syntax)
+            - [Example](#marquee-example)
         - [Link](#link)
             - [Syntax](#link-syntax)
             - [Example](#link-example)
@@ -219,6 +222,26 @@ This is horizontal rule:
 ![AbstractMark Logo](https://avatars.githubusercontent.com/u/77182073?s=200&v=4)
 ```
 ![AbstractMark Logo](https://avatars.githubusercontent.com/u/77182073?s=200&v=4)
+```
+
+## Marquee
+~> Marquee
+### Syntax {#marquee-syntax}
+#### Right direction marquee
+```
+~> Marquee text
+```
+#### Left direction marquee
+```
+<~ Marquee text
+```
+
+### Example
+~> Marquee text
+<~ Marquee text
+```
+~> Marquee text
+<~ Marquee text
 ```
 
 ## Link
