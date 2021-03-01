@@ -1,2 +1,36 @@
 # JavaScript Implementation
-will be available soon
+Implementation of AbstractMark on JavaScript includes AbstractMark CLI and AbstractMark function which can be called on Node JS and some other frameworks like React JS. Indeed, this documentation site you are viewing is written using AbstractMark which is imported in React JS, you can view this file on [GitHub](https://github.com/abstractmark/website/blob/master/src/Docs/javascript.am) as a proof!
+
+## Github Link of JavaScript Implementation
+[https://github.com/abstractmark/javascript](https://github.com/abstractmark/javascript)
+
+## Installation
+### Npm
+```
+npm i @abstractmark/abstractmark
+```
+### Yarn
+```
+yarn add @abstractmark/abstractmark
+```
+
+## AbstractMark CLI
+AbstractMark CLI is documented [here](/cli)
+
+## Import AbstractMark on Node JS
+Add following code in the top of your node.js file
+```
+const {AbstractMark} = require('@abstractmark/abstractmark');
+```
+
+## Import AbstractMark on React
+Add following code in the top of your react file
+```
+import {AbstractMark} from "@abstractmark/abstractmark";
+```
+
+## AbstractMark Function
+AbstractMark function needs AbstractMark source and an optional object as arguments. The optional object contains options to parse AbstractMark source to HTML tags. Available options are:
+-  `styled`, set it to true if you want to convert your abstractmark source into html tags with default style
+- `fullHTMLTags`, assign a true value if you want to convert your abstractmark source into full structured html tags.
+

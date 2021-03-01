@@ -7,8 +7,9 @@ const performaceCheckerStart = Date.now()
 
 const HomePage = () => {
     const [homePage, setHomePage] = useState('');
+    console.log(AbstractMark("# Hello World"))
     useEffect(() => {
-        Axios.get(raw).then(res => setHomePage(AbstractMark(res.data, {styled: false})))
+        Axios.get(raw).then(res => setHomePage(AbstractMark(res.data)))
         .then(() => {
             document.querySelector("#speed").innerHTML = `${(Date.now() - performaceCheckerStart)/1000}s`
         })
