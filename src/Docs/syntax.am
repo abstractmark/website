@@ -236,7 +236,7 @@ This is horizontal rule:
 <~ Marquee text
 ```
 
-### Example
+### Example {#marquee-example}
 ~> Marquee text
 <~ Marquee text
 ```
