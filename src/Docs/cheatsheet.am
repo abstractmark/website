@@ -88,6 +88,11 @@
     ```
     ![alt text](image.jpg)
     ```
+- Marquee
+    ```
+    <~ Left direction marquee
+    ~> Right direction marquee
+    ```
 - Link
     ```
     [title](https://example.com)
