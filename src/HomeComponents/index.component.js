@@ -7,7 +7,6 @@ const performaceCheckerStart = Date.now()
 
 const HomePage = () => {
     const [homePage, setHomePage] = useState('');
-    console.log(AbstractMark("# Hello World"))
     useEffect(() => {
         Axios.get(raw).then(res => setHomePage(AbstractMark(res.data)))
         .then(() => {
