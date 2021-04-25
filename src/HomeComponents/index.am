@@ -107,7 +107,7 @@ body{
             <div class="p-2">
                 ## Implementation {.teal-gradient-text}
                 - [JavaScript](https://github.com/abstractmark/javascript)
-                - [Python(in progress)](https://github.com/abstractmark/python)
+                - [Python](https://github.com/abstractmark/python)
             
                 We will implement AbstractMark to other languages soon. In addition, AbstractMark not only need contributors, but also maintainers !!! Contact us if you are interested!
             </div>

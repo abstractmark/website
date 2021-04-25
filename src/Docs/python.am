@@ -1,0 +1,25 @@
+# Python Implementation
+Implementation of AbstractMark on Python includes AbstractMark CLI and AbstractMark Class which can be called on another file. 
+
+## GitHub Link of Python Implementation
+[https://github.com/abstractmark/python](https://github.com/abstractmark/python)
+
+## Getting Started
+- Clone this repository from GitHub by typing `git clone https://github.com/abstractmark/python`
+
+## AbstractMark CLI
+Python usage of implementation of CLI also same as JavaScript implementation of [CLI](/cli#usage).
+
+## AbstractMark Class
+You can import AbstractMark Class into your Python code by adding following code:
+```
+from abstractmark import AbstractMark
+```
+
+To use this class, you need to pass AbstractMark source code into the class, and use `convert` function to convert it!
+Example:
+```
+from abstractmark import AbstractMark
+print(AbstractMark("# test  {color:red}", styled = False, fullHTMLTags=False).convert())
+// Output = <p><span style="color:red">test</span></p>
+```

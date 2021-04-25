@@ -24,4 +24,5 @@ npm i -g
 ## Table of Contents
 - [Syntax guide](/syntax)
 - [CLI](/cli)
-- [JavaScript implementation](javascript-implementation)
+- [JavaScript Implementation](javascript-implementation)
+- [Python Implementation](python-implementation)
